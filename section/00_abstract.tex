@@ -9,10 +9,7 @@
 
 近年、２人零和確定完全情報ゲームであるチェス、オセロ、将棋といったゲームでは人間のトッププレイヤと同等かそれ以上の実力を持つコンピュータプレイヤが提案され
 ている。一方で多人数不完全情報ゲームである麻雀では未だそれに及ばない状態である。これは従来のゲーム木の探索手法を適用するのが難しいためである。
-本論文では、探査空間が大きくなることでそのまま適用できなかったモンテカルロ法について、数理的な評価と適用する部分を限定することで、適用した。
-また、オリについては牌譜の統計的な分析を行うことで、読みの精度を上げるアプローチを取った。
-評価として、人間のプレイヤや先行研究AIとの比較を行った. 
-解析の結果、本手法で構築したAIは平均レベルのプレイヤに匹敵する実力を出すことができることがわかった。
+本論文では、探索空間が大きくなることでうまく適用できなかったモンテカルロ法について、期待和了平均順目の数理的な評価を利用することで探索空間を小さくし、適用する手法を提案する。この手法の効果を確かめる実験として、多人数性を排除した１人麻雀における和了率の比較を、人間のプレイヤや先行研究AIと行った。またそれをそのまま４人麻雀で対戦させた場合の比較も行う。解析の結果、本手法で構築したAIは１人麻雀において、平均レベルのプレイヤの和了率を出すことができることがわかった。また、４人麻雀に適用した場合、シャンテン数を下げるように打つAIに比べて高いレートを出すことが可能であることがわかった。
 
 
 \end{jabstract}
@@ -21,14 +18,10 @@
 % 英語のアブストラクト
 \begin{eabstract}
 
-Eigo ga dekinai node Roma-ji de soreppoi hunniki wo daseruto iina.
-
-Murippoi desu ne.
-
-Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here.
-
- Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here. Write down your abstract here.
-
-Write down your abstract here. Write down your abstract here.
+In recent years, computer games that are equal to or better than the top players of humans have been proposed for games such as chess, Othello, and shogi, which are two-person zero settled perfect information games
+ing. On the other hand, Mahjong which is a multiplayer incomplete information game has not yet reached it. This is because it is difficult to apply conventional search methods of game trees.
+In this paper, we propose a method to apply by restricting mathematical evaluation and applied parts of the Monte Carlo method which could not be applied successfully by increasing the search space.
+For evaluation, comparison of the rate of winning in one mahjong excluding multiplayer was done with human players and previous studies AI. We also make comparisons when we played it with 4 mahjong as it is.
+As a result of the analysis, we found that the AI ​​constructed by this method has comparable ability to that of the average level player.
 
 \end{eabstract}
