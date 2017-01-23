@@ -7,9 +7,7 @@
 % 日本語のアブストラクト
 \begin{jabstract}
 
-近年、２人零和確定完全情報ゲームであるチェス、オセロ、将棋といったゲームでは人間のトッププレイヤと同等かそれ以上の実力を持つコンピュータプレイヤが提案され
-ている。一方で多人数不完全情報ゲームである麻雀では未だそれに及ばない状態である。これは従来のゲーム木の探索手法を適用するのが難しいためである。
-本論文では、探索空間が大きくなることでうまく適用できなかったモンテカルロ法について、期待和了平均順目の数理的な評価を利用することで探索空間を小さくし、適用する手法を提案する。この手法の効果を確かめる実験として、多人数性を排除した１人麻雀における和了率の比較を、人間のプレイヤや先行研究AIと行った。またそれをそのまま４人麻雀で対戦させた場合の比較も行う。解析の結果、本手法で構築したAIは１人麻雀において、平均レベルのプレイヤの和了率を出すことができることがわかった。また、４人麻雀に適用した場合、シャンテン数を下げるように打つAIに比べて高いレートを出すことが可能であることがわかった。
+ゲームAIによる昨今の成果として、囲碁や将棋などのゲームでは、人間のチャンピオンレベルの実力に至っている。一方、麻雀においては未だそれに及んでいない。麻雀は多人数不完全情報ゲームに分類され、多人数性による複雑性と不完全情報による不確定性を理由に、適切なモデルを作成することが難しいからである。本論文では、和了率を高めるための打牌アルゴリズムとして、期待和了巡目の評価を利用する手法を提案する。この手法の効果を確かめる実験として、多人数性を取り除いた１人麻雀の成績と、通常の四人麻雀の成績を、関連研究のアルゴリズムや人間プレイヤーと比較した。本手法で構築したアルゴリズムは１人麻雀において、単に有効牌の数だけで比較するアルゴリズムよりも、高い和了率を示すことがわかった。４人麻雀では、わずかに和了率とレーティングが上回ったが、統計的に優位な差ではなかった。
 
 
 \end{jabstract}
@@ -18,10 +16,12 @@
 % 英語のアブストラクト
 \begin{eabstract}
 
-In recent years, computer games that are equal to or better than the top players of humans have been proposed for games such as chess, Othello, and shogi, which are two-person zero settled perfect information games
-ing. On the other hand, Mahjong which is a multiplayer incomplete information game has not yet reached it. This is because it is difficult to apply conventional search methods of game trees.
-In this paper, we propose a method to apply by restricting mathematical evaluation and applied parts of the Monte Carlo method which could not be applied successfully by increasing the search space.
-For evaluation, comparison of the rate of winning in one mahjong excluding multiplayer was done with human players and previous studies AI. We also make comparisons when we played it with 4 mahjong as it is.
-As a result of the analysis, we found that the AI ​​constructed by this method has comparable ability to that of the average level player.
+Recent achievements by game AI have led to human champion's ability in games such as Go and Shogi. On the other hand, Mahjong has not yet reached it. Mahjong is categorized as a multi-player incomplete information game, and it is difficult to create an appropriate model for reasons of complexity due to multiplicity and uncertainty due to incomplete information.
+
+In this thesis, we propose a method to use the evaluation of expected winning cycle as batting tile algorithm to raise the rate of winning.
+
+As an experiment to confirm the effectiveness of this method, we compare the performance of one mahjong who removed the multiplayer and the result of ordinary four person mahjong with the algorithm of related research and human player.
+
+It was found that the algorithm constructed by this method shows higher winning rate than the algorithm to compare by merely the number of effective tiles in one person mahjong. In the 4-person mahjong, the rate of winning and ratings were slightly higher, but it was not statistically significant difference.
 
 \end{eabstract}
