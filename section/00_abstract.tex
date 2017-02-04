@@ -20,12 +20,20 @@
 % 英語のアブストラクト
 \begin{eabstract}
 
-Recent achievements by game AI have led to human champion's ability in games such as Go and Shogi. On the other hand, Mahjong has not yet reached it. Mahjong is categorized as a multi-player incomplete information game, and it is difficult to create an appropriate model for reasons of complexity due to multiplicity and uncertainty due to incomplete information.
 
-In this thesis, we propose a method to use the evaluation of expected winning cycle as batting tile algorithm to raise the rate of winning.
+Recent achievements by game AI have led to human champion's ability in games such as Go and Shogi. On the other hand, Mahjong has not yet reached them. Mahjong is categorized as a multiplayer incomplete information game, and it is difficult to create an appropriate model because of complexity due to multiplicity and uncertainty due to incomplete information. In the problem of multiplicity, it is difficult to predict the behavior of opponent players with different purposes. Also, in the problem of incomplete information, it is necessary to assume unknown information, so we must decide the behavior by the expected value. Searching and comparing all feasible patterns is also impractical because the search space becomes too enormous.
 
-As an experiment to confirm the effectiveness of this method, we compare the performance of one mahjong who removed the multiplayer and the result of ordinary four person mahjong with the algorithm of related research and human player.
+In this research, from the nature of mahjong as mentioned above, pay attention to an algorithm that limits the problem to warm up and raises the rate of winning. Winter rate is an index showing the frequency of score in Mahjong, maximizing this is important for improving grades. As a batting tile algorithm to raise the rate of winning, this research proposes a method that utilizes the evaluation of expected hopes. The expected winning circle is obtained by roughly estimating the average consumption trajectory that it takes to complete the winning in the given tile figure. By maximizing the hit rate by selecting batting tiles such that this is the smallest. In the previous study, we compared the ease of hiring with just the number of effective tiles, so there was a problem that it was not possible to precisely compare the merits of effective tiles. In the method using expected hopes of this research, we aim to solve this problem and raise the rate of honory classification by classifying valid tiles further by type called block.
 
-It was found that the algorithm constructed by this method shows higher winning rate than the algorithm to compare by merely the number of effective tiles in one person mahjong. In the 4-person mahjong, the rate of winning and ratings were slightly higher, but it was not statistically significant difference.
+
+As an experiment to confirm the effect of this method, we compare the performance of one mahjong who removed the multiplayer and the result of ordinary 4 mahjong with an algorithm or Human Player with Shanten number or effective tile as an index. The algorithm constructed by this method shows about 10\% higher than the algorithm to compare with only the Shanten number in 1 person mahjong, about 3\% higher than the algorithm to compare with only the number of effective tiles. In the 4-person mahjong, the rate of winnnig and the rating exceeded slightly, respectively, but it was not statistically significant difference.
+
+% Recent achievements by game AI have led to human champion's ability in games such as Go and Shogi. On the other hand, Mahjong has not yet reached it. Mahjong is categorized as a multi-player incomplete information game, and it is difficult to create an appropriate model for reasons of complexity due to multiplicity and uncertainty due to incomplete information.
+
+% In this thesis, we propose a method to use the evaluation of expected winning cycle as batting tile algorithm to raise the rate of winning.
+
+% As an experiment to confirm the effectiveness of this method, we compare the performance of one mahjong who removed the multiplayer and the result of ordinary four person mahjong with the algorithm of related research and human player.
+
+% It was found that the algorithm constructed by this method shows higher winning rate than the algorithm to compare by merely the number of effective tiles in one person mahjong. In the 4-person mahjong, the rate of winning and ratings were slightly higher, but it was not statistically significant difference.
 
 \end{eabstract}
